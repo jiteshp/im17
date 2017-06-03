@@ -1,0 +1,87 @@
+//
+// Animate CSS properties
+// -------------------------------------------------------------------------------------------------
+.animate( @property: all, @time: 0.7s ) {
+	transition: @property @time;
+}
+
+//
+// Make flex container
+// -------------------------------------------------------------------------------------------------
+.make-flex-container( @width ) {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: @width;
+}
+
+//
+// Make flex container row
+// -------------------------------------------------------------------------------------------------
+.make-flex-container-row( @width, @gutter ) {
+	.make-flex-container( @width );
+	margin-left: @gutter / -2;
+	margin-right: @gutter / -2;
+}
+
+//
+// Make flex column
+// -------------------------------------------------------------------------------------------------
+.make-flex-column( @width, @gutter ) {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: percentage( @width );
+	padding-left: @gutter / 2;
+	padding-right: @gutter / 2;
+}
+
+//
+// Make flex grid
+// -------------------------------------------------------------------------------------------------
+.make-flex-grid( @cols, @gutter, @screen, @span: 1 ) when ( @span =< @cols ) {
+	.col-@{screen}-@{span} {
+		.make-flex-column( ( @span / @cols ), @gutter );
+	}
+
+	.make-flex-grid( @cols, @gutter, @screen, ( @span + 1 ) );
+}
+
+//
+// Make rounded corners
+// -------------------------------------------------------------------------------------------------
+.make-rounded( @radius ) {
+	border-radius: @radius;
+}
+
+//
+// Make screen reader text
+// -------------------------------------------------------------------------------------------------
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+    white-space: nowrap;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+
+	&:focus {
+		background-color: #f1f1f1;
+		border-radius: 3px;
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		color: #21759b;
+		display: block;
+		font-size: 14px;
+		font-size: 0.875rem;
+		font-weight: bold;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000; /* Above WP toolbar. */
+	}
+}
