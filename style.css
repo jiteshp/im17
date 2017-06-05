@@ -214,14 +214,14 @@ ul:last-child {
 .bonus,
 address,
 pre {
-  background-color: #eee;
+  background-color: #f6f6f6;
   padding: 32px;
 }
 .bonus {
   background-color: #fff5a8;
 }
 blockquote {
-  border-left: solid 5px #eee;
+  border-left: solid 5px #e6e6e6;
   padding-left: 27px;
 }
 pre {
@@ -322,7 +322,7 @@ h1,
 }
 hr {
   border: 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e6e6e6;
   margin-top: 32px;
 }
 ol,
@@ -334,18 +334,18 @@ ul {
   list-style: disc;
 }
 table {
-  border-bottom: 1px solid #eee;
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
+  border-bottom: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
   width: 100%;
 }
 table td,
 table th {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e6e6e6;
   padding: 8px;
 }
 table th {
-  background-color: #eee;
+  background-color: #f6f6f6;
   font-weight: bold;
 }
 a {
@@ -374,7 +374,7 @@ blockquote cite:before {
 code,
 kbd,
 var {
-  background-color: #eee;
+  background-color: #f6f6f6;
   font-family: 'Inconsolata', monospace;
 }
 del {
@@ -890,7 +890,7 @@ button:hover {
 .hentry,
 .pagination,
 .comments-area {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e6e6e6;
   margin: 0 auto;
   padding: 48px 0;
   max-width: 690px;
@@ -946,14 +946,14 @@ button:hover {
   color: #f2295b;
 }
 .entry-meta {
-  color: #ccc;
+  color: #bbb;
   font-size: 13px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 .entry-meta a {
   border: 0;
-  color: #ccc;
+  color: #bbb;
 }
 .entry-meta a:hover {
   color: #f2295b;
@@ -975,7 +975,7 @@ button:hover {
   text-align: center;
 }
 .pagination .page-numbers {
-  background-color: #eee;
+  background-color: #f6f6f6;
   border: 0 !important;
   display: inline-block;
   height: 48px;
@@ -988,13 +988,13 @@ button:hover {
   padding-left: 0;
 }
 .comment {
-  border-bottom: 1px dotted #eee;
+  border-bottom: 1px dotted #e6e6e6;
   margin-bottom: 32px;
   padding-bottom: 32px;
 }
 .comment .comment {
   border-bottom: 0;
-  border-top: 1px dotted #eee;
+  border-top: 1px dotted #e6e6e6;
   margin-bottom: 0;
   margin-left: 60px;
   margin-top: 32px;
@@ -1006,14 +1006,14 @@ button:hover {
   margin-right: 10px;
 }
 .comment-meta .comment-metadata {
-  color: #ccc;
+  color: #bbb;
   font-size: 13px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 .comment-meta .comment-metadata a {
   border: 0;
-  color: #ccc;
+  color: #bbb;
 }
 .comment-meta .comment-metadata a:hover {
   color: #f2295b;
@@ -1033,7 +1033,7 @@ button:hover {
 }
 .comment-respond {
   background-color: #f6f6f6;
-  border: solid 5px #eee;
+  border: solid 5px #e6e6e6;
   padding: 48px !important;
 }
 .comment .comment-respond {
@@ -1151,7 +1151,7 @@ button:hover {
 }
 .wpcf7 {
   background-color: #f6f6f6;
-  border: solid 5px #eee;
+  border: solid 5px #e6e6e6;
   padding: 48px !important;
 }
 .wpcf7 .wpcf7-form {

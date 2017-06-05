@@ -17,11 +17,13 @@
 //
 // Color variables
 // -------------------------------------------------------------------------------------------------
-@border-color: 				#eee;
+@block-bg-color: 			#f6f6f6;
+
+@border-color: 				#e6e6e6;
 @input-border-color: 		#c6c6c6;
 
 @text-color: 				#444;
-@meta-text-color: 			#ccc;
+@meta-text-color: 			#bbb;
 
 @accent-color: 				#f2295b;
 @alt-accent-color: 			#434264;
@@ -87,7 +89,7 @@ address, blockquote, dl, hr, ol, p, pre, table, ul {
 }
 
 .bonus, address, pre {
-	background-color: @border-color;
+	background-color: @block-bg-color;
 	padding: @base-line-height;
 }
 
@@ -195,7 +197,7 @@ table {
 	}
 
 	th {
-		background-color: @border-color;
+		background-color: @block-bg-color;
 		font-weight: bold;
 	}
 }
@@ -231,7 +233,7 @@ cite {
 }
 
 code, kbd, var {
-	background-color: @border-color;
+	background-color: @block-bg-color;
 	font-family: @code-font;
 }
 
@@ -611,7 +613,7 @@ input[type=submit], button {
 	text-align: center;
 
 	.page-numbers {
-		background-color: @border-color;
+		background-color: @block-bg-color;
 		border: 0 !important;
 		display: inline-block;
 		height: @input-height;
@@ -658,7 +660,7 @@ input[type=submit], button {
 }
 
 .comment-respond {
-	background-color: #f6f6f6;
+	background-color: @block-bg-color;
 	border: solid 5px @border-color;
 	padding: ( @base-line-height * 1.5 ) !important;
 
