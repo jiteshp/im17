@@ -82,7 +82,7 @@ add_action( 'widgets_init', 'im17_sidebars' );
  * @since 1.0.0
  */
 function im17_scripts() {
-	wp_enqueue_style( 'im17-fonts', 'https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i|Playfair+Display:700|Inconsolata' );
+	wp_enqueue_style( 'im17-fonts', 'https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i|PT+Serif:700|Inconsolata' );
 	wp_enqueue_style( 'im17-style', get_stylesheet_uri(), array( 'im17-fonts', 'dashicons' ) );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
